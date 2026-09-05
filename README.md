@@ -7,7 +7,7 @@
 - **Project:** MilkyWay · 은하수책방
 - **Type:** Team project
 - **Period:** 2024.09–2024.10
-- **Original team repository:** `fullstackteampj/MillkyWay`
+- **Original team repository:** [fullstackteampj/MillkyWay](https://github.com/fullstackteampj/MillkyWay)
 - **My GitHub account:** `Kzone87`
 - **My working branch:** `junghoon`
 - **Stack:** Java, JSP, Servlet, MySQL, JavaScript, Gson, Naver Open API, Tomcat
@@ -148,9 +148,11 @@ GitHub의 원본 이력에는 `Kzone87` 계정에서 생성해 병합된 PR이 �
 
 ## Security note about the legacy repository
 
-원본 팀 저장소에는 과거 학습 프로젝트 특성상 **하드코딩된 외부 API credential과 로컬 DB credential이 Git 이력 및 현재 소스에 남아 있는 부분**이 확인됩니다.
+원본 팀 저장소는 과거 학습 프로젝트 특성상 외부 API credential과 개발용 DB credential이 소스 및 Git 이력에 포함된 적이 있습니다.
 
-이 Case Study에는 해당 값을 복사하거나 노출하지 않습니다. 원본 credential은 이미 노출된 것으로 간주하고 사용 중이라면 **폐기/재발급**해야 합니다. 이 때문에 현재 개인 포트폴리오에서는 원본 저장소를 직접 홍보 링크로 사용하지 않습니다.
+2026-09-05에 현재 `main` 기준 보안 정리를 수행해 하드코딩된 자격증명을 환경변수 기반 설정으로 이동하고, OAuth `state` 검증과 토큰/프로필 노출 제거, tracked `build/` 및 백업 ZIP 제거를 적용했습니다. 관련 변경은 [Security hardening PR #49](https://github.com/fullstackteampj/MillkyWay/pull/49)에서 확인할 수 있습니다.
+
+당시 사용하던 Naver 애플리케이션은 폐기했으며, 현재 저장소에는 실제 credential을 다시 넣지 않고 연결 구조만 유지합니다. 과거 Git 이력은 팀 협업 및 기여 기록 보존을 위해 유지합니다.
 
 ## Why this project is in my portfolio
 
